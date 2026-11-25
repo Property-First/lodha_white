@@ -76,12 +76,12 @@ h1{font-size:clamp(36px,7.4vw,48px);letter-spacing:-.045em}h2{font-size:clamp(24
 .snap{padding:20px 16px;border-right:1px solid var(--line)}.snap:last-child{border-right:0}
 .snap span{display:block;font-size:10px;text-transform:uppercase;letter-spacing:.09em;color:var(--grey)}.snap b{display:block;margin-top:5px;font-size:11px}
 .overview-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:56px;align-items:center}
-.overview-visual img{height:550px;object-fit:cover;border-radius:10px}
+.overview-visual img{height:auto;object-fit:cover;border-radius:10px}
 .overview-copy p{color:var(--grey);margin:17px 0;font-size:13px}
 .mini-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:26px 0}
 .mini-card{background:#fff;border:1px solid var(--line);border-radius:14px;padding:18px}.mini-card b{display:block;margin-bottom:4px}.mini-card p{color:var(--grey);font-size:13px;margin:0}
 .price-table{background:#fff;border:1px solid var(--line);border-radius:10px;font-size:13px}
-.price-head,.price-row2{display:grid;grid-template-columns:.8fr 1.2fr 1fr 1fr;align-items:center;text-align:center}
+.price-head,.price-row2{display:grid;grid-template-columns:.8fr 1fr 1fr 1fr 1fr;align-items:center;text-align:center}
 .price-head{background:var(--black);color:#fff;font-size:11px;text-transform:uppercase;letter-spacing:.08em;border-radius:10px 10px 0 0}
 .price-head div,.price-row2 div{padding:15px 17px}
 .price-row2{border-bottom:1px solid var(--line)}.price-row2:last-child{border-bottom:0}
@@ -236,7 +236,7 @@ h1{font-size:clamp(36px,7.4vw,48px);letter-spacing:-.045em}h2{font-size:clamp(24
 
 <section class="section" id="overview">
 <div class="container overview-grid">
-<div class="overview-visual"><img src="./images/vertical_lodha_white.png" alt="Lodha Whitefield Hope Farm Bangalore"></div>
+<div class="overview-visual"><img src="./images/over_1.png" alt="Lodha Whitefield Hope Farm Bangalore"></div>
 <div class="overview-copy">
 <div class="eyebrow">Project Overview</div>
 <h2>The Space of a Larger Home, the Convenience of Whitefield</h2>
@@ -261,30 +261,36 @@ h1{font-size:clamp(36px,7.4vw,48px);letter-spacing:-.045em}h2{font-size:clamp(24
 <p>From a spacious family residence to a larger home for entertaining and multigenerational living, compare the layouts, deck sizes and complete cost of your preferred residence.</p>
 </div>
 
+
 <div class="price-table">
 
   <div class="price-head">
     <div>Residence</div>
-    <div>Saleable Area</div>
-    <div>Starting Price</div>
+    <div>Net Carpet Area</div>
+    <div>Super Built-up Area</div>
+    <div>Starting Price†</div>
     <div>Enquire</div>
   </div>
 
-  <!-- 3 BHK -->
+  <!-- 3.5 BHK -->
   <div class="price-row2">
     <div class="type" data-label="Residence">
-      3 BHK
+      3.5 BHK
     </div>
 
-    <div data-label="Saleable Area">
-      2,500–2,700 sq. ft.
+    <div data-label="Net Carpet Area">
+      1,650 sq. ft.
+    </div>
+
+    <div data-label="Super Built-up Area">
+      2,500 sq. ft.
     </div>
 
     <div data-label="Starting Price">
-      ₹4.59 cr* onwards
+      ₹4.60 crore
     </div>
 
-    <div data-label="Button">
+    <div data-label="Enquire">
       <a href="javascript:void(0)"
          class="imp_button imp_button-gold open-modal"
          data-title="Download Lodha Whitefield Price Plan"
@@ -294,21 +300,25 @@ h1{font-size:clamp(36px,7.4vw,48px);letter-spacing:-.045em}h2{font-size:clamp(24
     </div>
   </div>
 
-  <!-- 4 BHK -->
+  <!-- 4 BHK + Staff Room -->
   <div class="price-row2">
     <div class="type" data-label="Residence">
-      4 BHK
+      4 BHK + Staff Room
     </div>
 
-    <div data-label="Saleable Area">
-      3,100–3,300 sq. ft.
+    <div data-label="Net Carpet Area">
+      2,050 sq. ft.
+    </div>
+
+    <div data-label="Super Built-up Area">
+      3,100 sq. ft.
     </div>
 
     <div data-label="Starting Price">
-      On request
+      ₹5.75 crore
     </div>
 
-    <div data-label="Button">
+    <div data-label="Enquire">
       <a href="javascript:void(0)"
          class="imp_button imp_button-gold open-modal"
          data-title="Download Lodha Whitefield Price Plan"
@@ -321,18 +331,50 @@ h1{font-size:clamp(36px,7.4vw,48px);letter-spacing:-.045em}h2{font-size:clamp(24
   <!-- Grand Residences -->
   <div class="price-row2">
     <div class="type" data-label="Residence">
-      Grand Residences & Penthouses
+      Grand Residences
     </div>
 
-    <div data-label="Saleable Area">
-      On request
+    <div data-label="Net Carpet Area">
+      Approx. 3,400–4,200 sq. ft.
+    </div>
+
+    <div data-label="Super Built-up Area">
+      Approx. 5,000–6,500 sq. ft.
     </div>
 
     <div data-label="Starting Price">
-      On request
+      ₹9.70 crore
     </div>
 
-    <div data-label="Button">
+    <div data-label="Enquire">
+      <a href="javascript:void(0)"
+         class="imp_button imp_button-gold open-modal"
+         data-title="Download Lodha Whitefield Price Plan"
+         data-label="Price">
+        Enquire Now
+      </a>
+    </div>
+  </div>
+
+  <!-- Penthouses -->
+  <div class="price-row2">
+    <div class="type" data-label="Residence">
+      Penthouses
+    </div>
+
+    <div data-label="Net Carpet Area">
+      Approx. 5,200–6,200 sq. ft.
+    </div>
+
+    <div data-label="Super Built-up Area">
+      Approx. 8,000–9,500 sq. ft.
+    </div>
+
+    <div data-label="Starting Price">
+      ₹14.50 crore
+    </div>
+
+    <div data-label="Enquire">
       <a href="javascript:void(0)"
          class="imp_button imp_button-gold open-modal"
          data-title="Download Lodha Whitefield Price Plan"
@@ -343,9 +385,10 @@ h1{font-size:clamp(36px,7.4vw,48px);letter-spacing:-.045em}h2{font-size:clamp(24
   </div>
 
 </div>
-<p style="color:#737984;font-size:13px;margin-top:10px"><b>Looking for a 3.5 BHK?</b> Ask for the layout, area and current pricing when you enquire.</p>
 
-<p style="color:#737984;font-size:13px;margin-top:10px">*Ask for the unit-specific cost sheet including applicable taxes, stamp duty, registration and other charges. Areas are saleable, as shown in the supplied pricing table.</p>
+<!-- <p style="color:#737984;font-size:13px;margin-top:10px"><b>Looking for a 3.5 BHK?</b> Ask for the layout, area and current pricing when you enquire.</p> -->
+
+<p style="color:#737984;font-size:13px;margin-top:10px">*Request a unit-specific cost sheet for the full price and applicable taxes, stamp duty, registration and other charges.</p>
 </div>
 </section>
 
@@ -417,10 +460,10 @@ quick access to Whitefield's work and living hubs.</p>
 <!-- <button class="btn btn-black open-modal" style="margin-top:20px" data-title="Get Complete Lodha Whitefield Amenities">Get Full Amenities List</button> -->
 </div>
 <div class="amenity-gallery">
-<div class="amenity-img"><img src="./images/gallery/clubhouse.webp" alt="Lodha Whitefield Grand Clubhouse"><span>Grand Clubhouse</span></div>
-<div class="amenity-img"><img src="./images/sports.jpg" alt="Lodha Whitefield Sports Facilities"><span>Sports</span></div>
+<div class="amenity-img"><img src="./images/lodha_club.webp" alt="Lodha Whitefield Grand Clubhouse"><span>Grand Clubhouse</span></div>
+<div class="amenity-img"><img src="./images/Amenity-2_0.jpg" alt="Lodha Whitefield Sports Facilities"><span>Swimming Pool</span></div>
 <div class="amenity-img"><img src="./images/gym.jpg" alt="Lodha Whitefield Gymnasium"><span>Gymnasium</span></div>
-<div class="amenity-img"><img src="./images/gallery/kidsplayarea.webp" alt="Lodha Whitefield Kids Play Area"><span>Kid's Play Area</span></div>
+<div class="amenity-img"><img src="./images/Amenity-6.jpg" alt="Lodha Whitefield Kids Play Area"><span>Kid's Play Area</span></div>
 </div>
 
 </div>
@@ -562,11 +605,11 @@ quick access to Whitefield's work and living hubs.</p>
 <p>From expansive living spaces to the landscaped grounds, discover the detail behind the design.</p>
 </div>
 <div class="gallery-grid">
-<div class="gitem"><img src="./images/gallery_hope.jpg" alt="Lodha Whitefield Bangalore Interior"></div>
-<div class="gitem"><img src="./images/gallery_hope_1.jpg" alt="Lodha Whitefield Bangalore Exterior"></div>
-<div class="gitem"><img src="./images/gallery_hope_2.jpg" alt="Lodha Whitefield Bangalore Clubhouse"></div>
-<div class="gitem"><img src="./images/gallery_hope_3.jpg" alt="Lodha Whitefield Bangalore Pool"></div>
-<div class="gitem"><img src="./images/gallery_hope_4.jpg" alt="Lodha Whitefield Bangalore Living room"></div>
+<div class="gitem"><img src="./images/gal_imp.png" alt="Lodha Whitefield Bangalore Interior"></div>
+<div class="gitem"><img src="./images/gal_imp_1.png" alt="Lodha Whitefield Bangalore Exterior"></div>
+<div class="gitem"><img src="./images/gal_imp_2.png" alt="Lodha Whitefield Bangalore Clubhouse"></div>
+<div class="gitem"><img src="./images/gal_imp_3.png" alt="Lodha Whitefield Bangalore Pool"></div>
+<div class="gitem"><img src="./images/gal_imp_4.png" alt="Lodha Whitefield Bangalore Living room"></div>
 </div>
 </div>
 </section>
